@@ -117,8 +117,16 @@
               "devServerTarget": "cv-jr-angular:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "cv-jr-angular"
+    }
+  },
+  "defaultProject": "cv-jr-angular",
+  "cli": {
+    "analytics": "b0d06da9-6aa4-4c51-9b90-4763d8c5e6d7"
+  }
 }
