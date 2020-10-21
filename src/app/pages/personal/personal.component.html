@@ -1,0 +1,29 @@
+  <!-- Next Steps -->
+  <div class="content">
+  <h2>Datos Personales de tu interes</h2>
+
+  <input type="hidden" #selection>
+
+  <section>
+    <mat-divider></mat-divider>
+    <section>
+      <div class="example-button-row">
+        <button mat-stroked-button (click)= "selection.value = 'Correo'">Correo electrónico</button>
+        <button mat-stroked-button (click)= "selection.value = 'Telefono'">Telefono de contacto</button>
+        <button mat-stroked-button (click)= "selection.value = 'NivelDeIngles'">Nivel de ingles</button>
+        <button mat-stroked-button (click)= "selection.value = 'LicenciaDeConducir'">Licencia de conducir</button>
+      </div>
+    </section>
+    <mat-divider></mat-divider>
+  </section>
+
+  <!-- Terminal -->
+  <div class="terminal" [ngSwitch]= "selection.value">
+      <pre *ngSwitchDefault>Seleccione una opción</pre>
+      <pre *ngSwitchCase="'Telefono'"> +56996863449 </pre>
+      <pre *ngSwitchCase="'Correo'"> ing.jose.rioss@gmail.com </pre>
+      <pre *ngSwitchCase="'NivelDeIngles'"> Ingles A2</pre>
+      <pre *ngSwitchCase="'LicenciaDeConducir'"> Clase B</pre>
+
+  </div>
+</div>
