@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -28,7 +29,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatGridListModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   exports: [
     MatButtonToggleModule,
@@ -42,7 +44,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatGridListModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ]
 })
 export class MaterialModule { }

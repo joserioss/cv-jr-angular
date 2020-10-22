@@ -16,6 +16,7 @@
           <button mat-stroked-button (click)= "selection.value = 'Telefono'">Telefono de contacto</button>
           <button mat-stroked-button (click)= "selection.value = 'NivelDeIngles'">Nivel de ingles</button>
           <button mat-stroked-button (click)= "selection.value = 'LicenciaDeConducir'">Licencia de conducir</button>
+          <button mat-stroked-button (click)= "selection.value = 'Edad'">Edad</button>
         </div>
       </section>
       <mat-divider></mat-divider>
@@ -26,9 +27,9 @@
         <pre *ngSwitchDefault>Seleccione una opción</pre>
         <pre *ngSwitchCase="'Telefono'"> +56996863449 </pre>
         <pre *ngSwitchCase="'Correo'"> ing.jose.rioss@gmail.com </pre>
-        <pre *ngSwitchCase="'NivelDeIngles'"> Ingles A2</pre>
+        <pre *ngSwitchCase="'NivelDeIngles'"> Ingles certificado: A2 </pre>
         <pre *ngSwitchCase="'LicenciaDeConducir'"> Clase B</pre>
-
+        <pre *ngSwitchCase="'Edad'"> 27 años </pre>
     </div>
     </mat-card-content>
     <mat-card-actions>

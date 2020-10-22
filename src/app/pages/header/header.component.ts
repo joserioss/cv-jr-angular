@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  MatSnackBar,
+  MatSnackBarHorizontalPosition,
+  MatSnackBarVerticalPosition,
+} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-header',
@@ -6,11 +11,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title = 'Ingeniero Electronico & Desarrollador Full Stack';
+  title = 'INGENIERO ELECTRONICO & DESARROLLADOR FULL STACK';
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
 
+  openSnackBar() {
+    this._snackBar.open('ACTUALMENTE ESTOY EN BUSQUEDA LABORAL', 'AVISO', {
+      duration: 2500
+    });
+  }
 }
