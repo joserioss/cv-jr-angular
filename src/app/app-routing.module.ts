@@ -1,9 +1,14 @@
+import { PrincipalComponent } from './pages/principal/principal.component';
+import { AcademicoComponent } from './pages/academico/academico.component';
 import { PersonalComponent } from './pages/personal/personal.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'personal', component: PersonalComponent}
+  { path: 'principal', component: PrincipalComponent, children:[
+    { path: 'personal', component: PersonalComponent},
+    { path: 'academico', component: AcademicoComponent}
+  ]},
 ];
 
 @NgModule({

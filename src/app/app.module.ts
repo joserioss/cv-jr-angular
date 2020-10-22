@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PersonalComponent } from './pages/personal/personal.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { AcademicoComponent } from './pages/academico/academico.component';
+import { HeaderComponent } from './pages/header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     PersonalComponent,
     PrincipalComponent,
     FooterComponent,
+    AcademicoComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

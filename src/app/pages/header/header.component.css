@@ -6,11 +6,3 @@
   flex-direction: column;
   align-items: center;
 }
-
-.example-card {
-  max-width: 400px;
-}
-
-.example-section {
-  margin: 12px 0;
-}
