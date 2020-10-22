@@ -1,1 +1,62 @@
-<p>academico works!</p>
+<div class="content">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <h1>Formacion academica</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> DESARROLLADOR FULL STACK</mat-panel-title>
+            <mat-panel-description>
+              Talento digital para Chile - AIEP
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>(Enero 2020 - Agosto 2020)</p>
+          <p>
+            Desarrollador de aplicaciones full stack del bootcamp desarrollado
+            por sence/talento digital, cuyo proyecto final de curso corresponde
+            a la implementacion de un servidor montado en JAVA que recibe las
+            lecturas de sensores conectados a internet en tiempo real.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> INGENIERO EN ELECTRÓNICA</mat-panel-title>
+            <mat-panel-description> UTEM </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>(2011 - 2017)</p>
+          <p>
+            Ingeniero en electrónica, titulado el 1 de agosto del 2019, cuyo
+            proyecto de titulación fue la implementación de un sistema de
+            control de altura para un cuadricóptero en una base de pruebas.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              LICENCIADO EN CIENCIAS DE LA INGENIERÍA</mat-panel-title
+            >
+            <mat-panel-description> UTEM </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>(2011 - 2016)</p>
+          <p>
+            Título otorgado tras completar ciertas materias de la maya
+            curricular de la carrera ingeniería en electrónica.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+    <mat-card-actions class="center">
+      <button mat-button routerLink="/" style="cursor: pointer">
+        <mat-icon>arrow_back_ios</mat-icon> Volver
+      </button>
+      <button mat-button (click)= "accordion.openAll()">
+        <mat-icon>visibility</mat-icon> Expand All
+      </button>
+      <button mat-button (click)= "accordion.closeAll()">
+        <mat-icon>visibility_off</mat-icon>Collapse All
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

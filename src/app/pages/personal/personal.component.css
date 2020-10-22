@@ -11,6 +11,11 @@ section {
   display: table;
 }
 
+.example-card {
+  max-width: 400px;
+  min-width: 400px;
+}
+
 .example-container {
   display: flex;
   flex-direction: column;

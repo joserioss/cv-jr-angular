@@ -1,12 +1,11 @@
 <router-outlet></router-outlet>
-<div [hidden]= "route.children.length !== 0">
-
+<div [hidden]="route.children.length !== 0">
   <div class="content">
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar>
           <img
-            style="width: 50px; height: 50px; border-radius:25px;"
+            style="width: 50px; height: 50px; border-radius: 25px"
             src="assets/perfil.jpg"
             alt="foto de perfil"
           />
@@ -16,46 +15,56 @@
       </mat-card-header>
 
       <mat-card-content>
-      <p>
-        Ingeniero electrónico, autodidacta y apasionado por adquirir nuevos
-        conocimientos. Estas características, me permiten adquirir el nivel de
-        abstracción necesario para combinar mis capacidades en el campo
-        electrónico integradas con tecnología de vanguardia.
-      </p>
+        <p>
+          Ingeniero electrónico, autodidacta y apasionado por adquirir nuevos
+          conocimientos. Estas características, me permiten adquirir el nivel de
+          abstracción necesario para combinar mis capacidades en el campo
+          electrónico integradas con tecnología de vanguardia.
+        </p>
         <mat-accordion>
-          <mat-expansion-panel (opened)= "panelOpenState = true" (closed)= "panelOpenState = false">
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
             <mat-expansion-panel-header>
               <mat-panel-title> Liderazgo</mat-panel-title>
             </mat-expansion-panel-header>
             <p>
-              “Durante mi paso por la universidad, en los años 2016 y 2017 tomé un
-              rol en la coordinación del club de robótica de dicha universidad, lo
-              que me ayudo a adquirir mis habilidades de liderazgo y compromiso, las
-              cuales considero mis principales fortalezas.”
+              “Durante mi paso por la universidad, en los años 2016 y 2017 tomé
+              un rol en la coordinación del club de robótica de dicha
+              universidad, lo que me ayudo a adquirir mis habilidades de
+              liderazgo y compromiso, las cuales considero mis principales
+              fortalezas.”
             </p>
           </mat-expansion-panel>
 
-          <mat-expansion-panel (opened)= "panelOpenState = true" (closed)= "panelOpenState = false">
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
             <mat-expansion-panel-header>
               <mat-panel-title> Apasionado </mat-panel-title>
             </mat-expansion-panel-header>
             <p>
-              “No le temo a los desafíos, soy capaz de dejar mi zona de confort con
-              tal de seguir aprendiendo y generando nuevos conocimientos”
+              “No le temo a los desafíos, soy capaz de dejar mi zona de confort
+              con tal de seguir aprendiendo y generando nuevos conocimientos”
             </p>
           </mat-expansion-panel>
 
-          <mat-expansion-panel (opened)= "panelOpenState = true" (closed)= "panelOpenState = false">
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
             <mat-expansion-panel-header>
               <mat-panel-title> Gustos </mat-panel-title>
             </mat-expansion-panel-header>
             <p>
-              “Me gusta hacer deporte, los animales y la naturaleza. ¡Y me encanta tomar café y mate!”.
+              “Me gusta hacer deporte, los animales y la naturaleza. ¡Y me
+              encanta tomar café y mate!”.
             </p>
           </mat-expansion-panel>
         </mat-accordion>
-
-       </mat-card-content>
+      </mat-card-content>
       <mat-card-actions>
         <a
           href="https://github.com/joserioss/curriculumPDF/raw/master/CV_JoseRiosSanchez.pdf"
@@ -68,5 +77,24 @@
     </mat-card>
   </div>
 
-
+  <div class="content">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <h1>Contactame</h1>
+      </mat-card-header>
+      <mat-form-field class="selected" appearance="fill">
+        <mat-label>Medios de contacto</mat-label>
+        <mat-select [(value)]= "selected">
+          <mat-option class="selected"
+            *ngFor="let redessociales of rs"
+            [value]="redessociales.value"
+          >
+            {{ redessociales.viewValue }}
+          </mat-option>
+        </mat-select>
+        <mat-hint align="end">Elige una opción</mat-hint>
+      </mat-form-field>
+      <a mat-flat-button href="{{ selected }}" target="_blank">Ir</a>
+    </mat-card>
+  </div>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-academico',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./academico.component.css']
 })
 export class AcademicoComponent implements OnInit {
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   constructor() { }
 

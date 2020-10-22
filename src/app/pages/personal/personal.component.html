@@ -1,8 +1,11 @@
 <div class="content">
 
-  <mat-card >
-    <mat-toolbar>Datos Personales</mat-toolbar>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <h1>Datos Personales</h1>
+    </mat-card-header>
 
+    <mat-card-content>
     <input type="hidden" #selection>
 
     <section>
@@ -27,6 +30,12 @@
         <pre *ngSwitchCase="'LicenciaDeConducir'"> Clase B</pre>
 
     </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button routerLink="/" style="cursor: pointer">
+          <mat-icon>arrow_back_ios</mat-icon> Volver
+        </button>
+    </mat-card-actions>
   </mat-card>
 
 </div>
