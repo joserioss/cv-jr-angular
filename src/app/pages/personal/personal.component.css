@@ -21,17 +21,21 @@ section {
   width: 490px;
 }
 
+.button-row {
+  min-width: 400px;
+}
+
 .example-button-row .mat-button-base {
   margin: 8px 8px 8px 0;
 }
 
 .terminal {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   border-radius: 6px;
   padding-top: 45px;
-  margin-top: 8px;
+  margin-top: 16px;
   overflow: hidden;
   background-color: rgb(15, 15, 16);
 }

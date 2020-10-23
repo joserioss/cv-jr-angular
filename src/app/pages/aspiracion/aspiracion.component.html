@@ -1,0 +1,48 @@
+<div class="content">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Aspiraciones laborales</mat-card-title>
+      <mat-card-subtitle>Lo que espero</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        Deseo con ansias aportar con mi esfuerzo y conocimientos, a quienes
+        puedan beneficiarse de ello. Por otro lado busco un lugar en donde se me permita
+        seguir creciendo, con un aprendizaje constante y el apollo para hacer esto.
+      </p>
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> Serveless</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Actualmente estoy interesado en aprender de tecnologías serverless,
+            con la finalidad de complementar mi carrera.
+          </p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> IOT </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            Ingrese al mundo de la programación por el gusto a la robotica, y lograr
+            desarrollar sistemas IOT es una gran meta que deseo cumplir.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+    <mat-card-actions class="center">
+      <button mat-button routerLink="/" style="cursor: pointer">
+        <mat-icon>arrow_back_ios</mat-icon> Volver
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

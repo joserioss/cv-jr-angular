@@ -10,6 +10,7 @@ import { PrincipalComponent } from './pages/principal/principal.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { AcademicoComponent } from './pages/academico/academico.component';
 import { HeaderComponent } from './pages/header/header.component';
+import { AspiracionComponent } from './pages/aspiracion/aspiracion.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderComponent } from './pages/header/header.component';
     FooterComponent,
     AcademicoComponent,
     HeaderComponent,
+    AspiracionComponent,
   ],
   imports: [
     BrowserModule,

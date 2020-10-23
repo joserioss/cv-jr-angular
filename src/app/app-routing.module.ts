@@ -1,3 +1,4 @@
+import { AspiracionComponent } from './pages/aspiracion/aspiracion.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { AcademicoComponent } from './pages/academico/academico.component';
 import { PersonalComponent } from './pages/personal/personal.component';
@@ -7,7 +8,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: 'principal', component: PrincipalComponent, children:[
     { path: 'personal', component: PersonalComponent},
-    { path: 'academico', component: AcademicoComponent}
+    { path: 'academico', component: AcademicoComponent},
+    { path: 'aspiracion', component: AspiracionComponent}
   ]},
 ];
 
