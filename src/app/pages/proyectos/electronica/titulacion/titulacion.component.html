@@ -1,0 +1,46 @@
+<div class="content">
+  <h1>CONTROL PID DE ALTURA</h1>
+  <div>
+    <p>
+      Para conseguir el título de ingeniero electrónico realice un proyecto de
+      título basado en la implementación de un cuadricóptero DIY montado en una
+      base de pruebas, en donde se indicaba la altura en la que el usuario
+      quería que la aeronave se mantuviese estable hasta que se deseara
+      finalizar la prueba. La siguiente imagen muestra al lado izquierdo de la
+      pantalla el entorno de pruebas en las que se llevó a cabo dicho proyecto,
+      y al lado derecho de la pantalla la curva de respuesta que la aeronave
+      obtuvo en esa prueba realizada, esta curva fue capturada posteriormente
+      mediante la herramienta de modelado y análisis de video Tracker.
+    </p>
+
+    <p>
+      Para conseguir este objetivo, se implementa un lazo de control cerrado con
+      un controlador PID (proporcional – integral – derivativo) el cual, al
+      variar ciertos parámetros producirá una respuesta que amortigua al
+      sistema. LA siguiente imagen muestra como un sistema puede amortiguar su
+      respuesta al variar los valores del PID.
+    </p>
+
+    <p>
+      Uno de los grandes desafíos se encontraba al sacar a la aeronave del
+      reposo, en donde el control que genera los pulsos PWM que ingresan a los
+      motores brushless asimila que se necesitan aumentar los valores de estos
+      pulsos ya que la aeronave no disminuye el error existente entre el set
+      point y la altura real del sistema. Siendo este, el punto más crítico para
+      los valores previamente calculados para el control PID, en donde era
+      necesario que la aeronave lograse un sobrepaso amortiguado al ir desde el
+      suelo hasta el punto seleccionado. La siguiente imagen muestra la altura
+      que mide la aeronave y la generación de los pulsos PWM, observándose
+      claramente que en el momento en que el sistema sobrepasa el set point
+      (flechas verdes y rojas) los pulsos PWM se reajustan para que la aeronave
+      alcance un error mínimo.
+    </p>
+    <p>
+      Por otro lado, inicialmente las pruebas se realizaron con baterías de
+      litio polímero de 3 celdas, las cuales se podían ubicar sobre la aeronave.
+      Pero el desgaste de estas baterías después de cada ciclo de carga/descarga
+      influían en su vida útil. Por lo que se finalizaron las pruebas con la
+      aeronave alimentada desde una batería de auto externa a ella.
+    </p>
+  </div>
+</div>

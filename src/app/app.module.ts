@@ -11,6 +11,11 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { AcademicoComponent } from './pages/academico/academico.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { AspiracionComponent } from './pages/aspiracion/aspiracion.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { TitulacionComponent } from './pages/proyectos/electronica/titulacion/titulacion.component';
+import { ArduinoComponent } from './pages/proyectos/electronica/arduino/arduino.component';
+import { RaspberryComponent } from './pages/proyectos/electronica/raspberry/raspberry.component';
+import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { AspiracionComponent } from './pages/aspiracion/aspiracion.component';
     AcademicoComponent,
     HeaderComponent,
     AspiracionComponent,
+    ProyectosComponent,
+    TitulacionComponent,
+    ArduinoComponent,
+    RaspberryComponent,
+    ElectronicaComponent,
   ],
   imports: [
     BrowserModule,

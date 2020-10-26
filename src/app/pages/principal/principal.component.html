@@ -1,6 +1,10 @@
 <router-outlet></router-outlet>
 <div [hidden]="route.children.length !== 0">
   <div class="content">
+    <div id="qrcode">
+      <img src="assets/qr_url.png" alt="Generador de Códigos QR Codes" />
+    </div>
+
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar>
@@ -84,8 +88,9 @@
       </mat-card-header>
       <mat-form-field class="selected" appearance="fill">
         <mat-label>Medios de contacto</mat-label>
-        <mat-select [(value)]= "selected">
-          <mat-option class="selected"
+        <mat-select [(value)]="selected">
+          <mat-option
+            class="selected"
             *ngFor="let redessociales of rs"
             [value]="redessociales.value"
           >
