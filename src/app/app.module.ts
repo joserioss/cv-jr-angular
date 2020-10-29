@@ -16,6 +16,9 @@ import { TitulacionComponent } from './pages/proyectos/electronica/titulacion/ti
 import { ArduinoComponent } from './pages/proyectos/electronica/arduino/arduino.component';
 import { RaspberryComponent } from './pages/proyectos/electronica/raspberry/raspberry.component';
 import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.component';
+import { FullstackComponent } from './pages/proyectos/fullstack/fullstack.component';
+import { BackendComponent } from './pages/proyectos/fullstack/backend/backend.component';
+import { FrontendComponent } from './pages/proyectos/fullstack/frontend/frontend.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.
     ArduinoComponent,
     RaspberryComponent,
     ElectronicaComponent,
+    FullstackComponent,
+    BackendComponent,
+    FrontendComponent,
   ],
   imports: [
     BrowserModule,

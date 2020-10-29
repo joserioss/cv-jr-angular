@@ -1,3 +1,6 @@
+import { FrontendComponent } from './pages/proyectos/fullstack/frontend/frontend.component';
+import { BackendComponent } from './pages/proyectos/fullstack/backend/backend.component';
+import { FullstackComponent } from './pages/proyectos/fullstack/fullstack.component';
 import { TitulacionComponent } from './pages/proyectos/electronica/titulacion/titulacion.component';
 import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.component';
 import { ArduinoComponent } from './pages/proyectos/electronica/arduino/arduino.component';
@@ -21,7 +24,12 @@ const routes: Routes = [
       { path: 'raspberry', component: RaspberryComponent},
       { path: 'arduino', component: ArduinoComponent},
       { path: 'titulacion', component: TitulacionComponent}
-    ]}
+    ]},
+    {
+      path: 'fullstack', component: FullstackComponent, children:[
+        { path: 'backend', component: BackendComponent},
+        { path: 'frontend', component: FrontendComponent}
+      ]}
   ]}
 ];
 
