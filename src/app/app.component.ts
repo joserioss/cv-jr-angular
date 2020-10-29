@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   panelOpenState = false;
+  booleanQR = true;
   title = 'cv-jr-angular';
+
+  mostrarQR(){
+    this.booleanQR = !this.booleanQR;
+  }
 }

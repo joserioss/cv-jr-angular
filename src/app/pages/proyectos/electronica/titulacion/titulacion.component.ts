@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitulacionComponent implements OnInit {
 
+  tab1 = "Resumen";
+  tab2 = "Introducción";
+  tab3 = "Desarrollo";
+  tab4 = "Conclusion";
+
   constructor() { }
 
   ngOnInit(): void {

@@ -19,6 +19,28 @@
     </button>
 
     <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="mostrarQR()">
+        <mat-icon>share</mat-icon>
+        <span>QR</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+  <!-- SIDENAV -->
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #sidenav style="width: 200px">
+      <img src="assets/logo.png" width="128" style="margin-left: 20px" />
+      <button
+        mat-menu-item
+        (click)="sidenav.toggle()"
+        routerLink="/"
+        style="cursor: pointer"
+      >
+        <mat-icon>home</mat-icon>
+        <span>Inicio</span>
+      </button>
+      <mat-divider></mat-divider>
+
+      <p>Personal</p>
       <button mat-menu-item routerLink="/principal/personal">
         <mat-icon>account_box</mat-icon>
         <span>Datos Personales</span>
@@ -31,12 +53,7 @@
         <mat-icon>work</mat-icon>
         <span>Aspiraciones laborales</span>
       </button>
-    </mat-menu>
-  </mat-toolbar>
-  <!-- SIDENAV -->
-  <mat-sidenav-container class="example-sidenav-container">
-    <mat-sidenav #sidenav style="width: 200px">
-      <img src="assets/logo.png" width="128" style="margin-left: 20px" />
+      <mat-divider></mat-divider>
       <p>Proyectos</p>
       <mat-accordion class="example-headers-align">
         <mat-expansion-panel
@@ -109,6 +126,14 @@
     <!-- Navegacion principal -->
     <mat-sidenav-content>
       <router-outlet></router-outlet>
+      <div [hidden]="booleanQR">
+        <mat-card class="example-card">
+          <div id="qrcode">
+            <img src="assets/qr_url.png" alt="Generador de Códigos QR Codes" />
+          </div>
+        </mat-card>
+      </div>
+
       <app-header></app-header>
       <app-principal></app-principal>
 

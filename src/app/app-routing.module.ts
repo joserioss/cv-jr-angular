@@ -3,10 +3,10 @@ import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.
 import { ArduinoComponent } from './pages/proyectos/electronica/arduino/arduino.component';
 import { RaspberryComponent } from './pages/proyectos/electronica/raspberry/raspberry.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
-import { AspiracionComponent } from './pages/aspiracion/aspiracion.component';
+import { AspiracionComponent } from './pages/principal/aspiracion/aspiracion.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
-import { AcademicoComponent } from './pages/academico/academico.component';
-import { PersonalComponent } from './pages/personal/personal.component';
+import { AcademicoComponent } from './pages/principal/academico/academico.component';
+import { PersonalComponent } from './pages/principal/personal/personal.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

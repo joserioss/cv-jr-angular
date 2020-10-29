@@ -1,46 +1,125 @@
 <div class="content">
   <h1>CONTROL PID DE ALTURA</h1>
-  <div>
-    <p>
-      Para conseguir el título de ingeniero electrónico realice un proyecto de
-      título basado en la implementación de un cuadricóptero DIY montado en una
-      base de pruebas, en donde se indicaba la altura en la que el usuario
-      quería que la aeronave se mantuviese estable hasta que se deseara
-      finalizar la prueba. La siguiente imagen muestra al lado izquierdo de la
-      pantalla el entorno de pruebas en las que se llevó a cabo dicho proyecto,
-      y al lado derecho de la pantalla la curva de respuesta que la aeronave
-      obtuvo en esa prueba realizada, esta curva fue capturada posteriormente
-      mediante la herramienta de modelado y análisis de video Tracker.
-    </p>
+  <h3>{{ tab1 }}</h3>
+        <p>
+          Para conseguir el título de ingeniero electrónico realice un proyecto
+          de título basado en la implementación de un cuadricóptero DIY montado
+          en una base de pruebas, en donde se indicaba la altura en la que el
+          usuario quería que la aeronave se mantuviese estable hasta que se
+          deseara finalizar la prueba.
+        </p>
+        <!-- Image-->
+        <mat-card class="example-card">
+          <mat-tab-group animationDuration="1000ms">
 
-    <p>
-      Para conseguir este objetivo, se implementa un lazo de control cerrado con
-      un controlador PID (proporcional – integral – derivativo) el cual, al
-      variar ciertos parámetros producirá una respuesta que amortigua al
-      sistema. LA siguiente imagen muestra como un sistema puede amortiguar su
-      respuesta al variar los valores del PID.
-    </p>
 
-    <p>
-      Uno de los grandes desafíos se encontraba al sacar a la aeronave del
-      reposo, en donde el control que genera los pulsos PWM que ingresan a los
-      motores brushless asimila que se necesitan aumentar los valores de estos
-      pulsos ya que la aeronave no disminuye el error existente entre el set
-      point y la altura real del sistema. Siendo este, el punto más crítico para
-      los valores previamente calculados para el control PID, en donde era
-      necesario que la aeronave lograse un sobrepaso amortiguado al ir desde el
-      suelo hasta el punto seleccionado. La siguiente imagen muestra la altura
-      que mide la aeronave y la generación de los pulsos PWM, observándose
-      claramente que en el momento en que el sistema sobrepasa el set point
-      (flechas verdes y rojas) los pulsos PWM se reajustan para que la aeronave
-      alcance un error mínimo.
-    </p>
-    <p>
-      Por otro lado, inicialmente las pruebas se realizaron con baterías de
-      litio polímero de 3 celdas, las cuales se podían ubicar sobre la aeronave.
-      Pero el desgaste de estas baterías después de cada ciclo de carga/descarga
-      influían en su vida útil. Por lo que se finalizaron las pruebas con la
-      aeronave alimentada desde una batería de auto externa a ella.
-    </p>
+
+            <mat-tab label="{{ tab2 }}">
+              <h3>{{ tab2 }}</h3>
+              <p>
+                Para conseguir este objetivo, se implementa un lazo de control cerrado
+                con un controlador PID (proporcional – integral – derivativo) el cual,
+                al variar ciertos parámetros producirá una respuesta que amortigua al
+                sistema.
+              </p>
+              <!-- Portfolio Modal - Image-->
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Solucion PID</mat-card-title>
+                  <mat-card-subtitle>Gift explicativo</mat-card-subtitle>
+                </mat-card-header>
+                <img class="img-fluid" src="assets/dron/compensacionPID.gif" alt="compensacion PID" />
+                <mat-card-content>
+                  <p>
+                    LA siguiente imagen muestra como un sistema puede amortiguar su
+                    respuesta al variar los valores del PID.
+                  </p>
+                </mat-card-content>
+              </mat-card>
+
+              <!-- Portfolio Modal - Text-->
+            </mat-tab>
+            <mat-tab label="{{ tab3 }}">
+              <h3>{{ tab3 }}</h3>
+              <p>
+                Uno de los grandes desafíos se encontraba al sacar a la aeronave del
+                reposo, en donde el control que genera los pulsos PWM que ingresan a
+                los motores brushless asimila que se necesitan aumentar los valores de
+                estos pulsos ya que la aeronave no disminuye el error existente entre
+                el set point y la altura real del sistema. Siendo este, el punto más
+                crítico para los valores previamente calculados para el control PID,
+                en donde era necesario que la aeronave lograse un sobrepaso
+                amortiguado al ir desde el suelo hasta el punto seleccionado.
+              </p>
+              <!-- Portfolio Modal - Image-->
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Grafico de altura y respuesta PWM </mat-card-title>
+                  <mat-card-subtitle>Respuesta del sistema</mat-card-subtitle>
+                </mat-card-header>
+                <img class="img-fluid" src="assets/dron/prueba.bmp" alt="Pulsos pwm y altura" />
+                <mat-card-content>
+                  <p>
+                    La siguiente imagen muestra la altura que mide la aeronave y la
+                    generación de los pulsos PWM, observándose claramente que en el
+                    momento en que el sistema sobrepasa el set point (flechas verdes y
+                    rojas) los pulsos PWM se reajustan para que la aeronave alcance un
+                    error mínimo.
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-tab>
+
+            <mat-tab label="{{ tab4 }}">
+              <h3>{{ tab4 }}</h3>
+              <p>
+                Para conseguir la realimentación de la altura a la que se encontraba
+                la aeronave se implementó la programación de un arreglo de 3 sensores
+                ultrasónicos ubicados en la base del cuadricóptero.
+              </p>
+              <!-- Portfolio Modal - Image-->
+              <img class="img-fluid" src="assets/dron/Sensores.jpg" alt="Vista inferior del drone" />
+
+              <p>
+                Por otro lado, inicialmente las pruebas se realizaron con baterías de
+                litio polímero de 3 celdas, las cuales se podían ubicar sobre la
+                aeronave. Pero el desgaste de estas baterías después de cada ciclo de
+                carga/descarga influían en su vida útil. Por lo que se finalizaron las
+                pruebas con la aeronave alimentada desde una batería de auto externa a
+                ella.
+              </p>
+              <mat-card>
+                <mat-card-header>
+                  <mat-card-title>Video Tracker</mat-card-title>
+                  <mat-card-subtitle>Programa post prueba</mat-card-subtitle>
+                </mat-card-header>
+                <img class="img-fluid"
+                  src="assets/dron/tracerDron.png"
+                  alt="Dron y su curva de respuesta"
+                />
+                <mat-card-content>
+                  <p>
+                    La siguiente imagen muestra al lado izquierdo de la pantalla el
+                    entorno de pruebas en las que se llevó a cabo dicho proyecto, y al
+                    lado derecho de la pantalla la curva de respuesta que la aeronave
+                    obtuvo en esa prueba realizada, esta curva fue capturada
+                    posteriormente mediante la herramienta de modelado y análisis de
+                    video Tracker.
+                  </p>
+                </mat-card-content>
+              </mat-card>
+            </mat-tab>
+
+
+          </mat-tab-group>
+
+
+        </mat-card>
+  <div class="content">
+
+
+    <button mat-button routerLink="/proyecto" style="cursor: pointer">
+      <mat-icon>arrow_back_ios</mat-icon> Volver
+    </button>
   </div>
 </div>
