@@ -40,29 +40,51 @@
       </button>
       <mat-divider></mat-divider>
 
-      <p>Personal</p>
-      <button mat-menu-item routerLink="/principal/personal">
-        <mat-icon>account_box</mat-icon>
-        <span>Datos Personales</span>
-      </button>
-      <button mat-menu-item routerLink="/principal/academico">
-        <mat-icon>school</mat-icon>
-        <span>Formación academica</span>
-      </button>
-      <button mat-menu-item routerLink="/principal/aspiracion">
-        <mat-icon>work</mat-icon>
-        <span>Aspiraciones laborales</span>
-      </button>
-      <mat-divider></mat-divider>
-      <p>Proyectos</p>
       <mat-accordion class="example-headers-align">
         <mat-expansion-panel
           (opened)="panelOpenState = true"
           (closed)="panelOpenState = false"
         >
           <mat-expansion-panel-header>
-            <mat-panel-title>FULL STACK</mat-panel-title>
+            <mat-panel-title>Personal</mat-panel-title>
           </mat-expansion-panel-header>
+
+          <button
+            mat-menu-item
+            (click)="sidenav.toggle()"
+            routerLink="/principal/personal"
+          >
+            <mat-icon>account_box</mat-icon>
+            <span>Datos Personales</span>
+          </button>
+          <button
+            mat-menu-item
+            (click)="sidenav.toggle()"
+            routerLink="/principal/academico"
+          >
+            <mat-icon>school</mat-icon>
+            <span>Formación academica</span>
+          </button>
+          <button
+            mat-menu-item
+            (click)="sidenav.toggle()"
+            routerLink="/principal/aspiracion"
+          >
+            <mat-icon>work</mat-icon>
+            <span>Aspiraciones laborales</span>
+          </button>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> Proyectos</mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-panel-title>FULL STACK</mat-panel-title>
+
           <button
             mat-menu-item
             (click)="sidenav.toggle()"
@@ -82,14 +104,9 @@
             <mat-icon>insert_drive_file</mat-icon>
             <span>Front-end</span>
           </button>
-        </mat-expansion-panel>
-        <mat-expansion-panel
-          (opened)="panelOpenState = true"
-          (closed)="panelOpenState = false"
-        >
-          <mat-expansion-panel-header>
-            <mat-panel-title> ELECTRÓNICA</mat-panel-title>
-          </mat-expansion-panel-header>
+
+          <mat-panel-title> ELECTRÓNICA</mat-panel-title>
+
           <button
             mat-menu-item
             (click)="sidenav.toggle()"
