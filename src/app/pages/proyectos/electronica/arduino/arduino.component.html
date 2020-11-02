@@ -1,77 +1,97 @@
-<div class="col-lg-8">
-  <!-- Portfolio Modal - Title-->
-  <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-      id="portfolioModal1Label"> Arduino</h2>
-  <div class="divider-custom">
-      <div class="divider-custom-line"></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-      <div class="divider-custom-line"></div>
-  </div>
-  <p class="mb-5">
-      "Mi experiencia en arduino se remonta al año 2013, en donde me inicio en el mundo de
-      la programación al participar de talleres de introducción a la electrónica en el
-      club de robótica de mi universidad (CRU)."
-  </p>
-  <!-- Portfolio Modal - Image-->
-  <img class="img-fluid rounded mb-5" src="assets/arduino/P1000526.JPG"
-      alt="Club de robotica" />
-  <!-- Portfolio Modal - Text-->
-  <p class="mb-5">
-      Conforme pasaron los años fui aprendiendo más sobre este amplio mundo de la
-      electrónica, haciendo uso de diferentes elementos como, por ejemplo:
-  </p>
-  <ul>
-      <li>Transistores.</li>
-      <li>Relés.</li>
-      <li>Fotorresistencias. </li>
-      <li>Motores CC.</li>
-      <li>Motores paso a paso. </li>
-      <li>Servomotores. </li>
-      <li>Módulos WI-Fi. </li>
-      <li>Módulos Bluetooth. </li>
-      <li>Sensores ultrasónicos. </li>
-      <li>Sensores PIR. </li>
-      <li>Unidades de medición inercial (IMU). </li>
-      <li>Matriz led. </li>
-      <li>Entre otros.</li>
-  </ul>
-
-  <p>Dentro de los proyectos en que aplicábamos estos conocimientos adquiridos, se
-      encuentra la reutilización de hardware de juguetes antiguos para poder manejarlos
-      desde diferentes controles a distancia como, por ejemplo: </p>
-  <ul>
-      <li>Bluetooth: mediante la conexión entre el celular y un módulo Bluetooth que
-          recibe los datos enviados desde el celular. </li>
-      <li>Radio control: mediante la lectura de los pulsos PWM que recibe el receptor del
-          radiocontrol, y mediante un posterior análisis que se puede traducir al
-          movimiento deseado.</li>
-      <li>Control PS2: mediante la adaptación de los controles de mando inalámbricos de
-          las PlayStation II, los cuales reciben datos que son leídos por el arduino y
-          convertidos en determinadas acciones.</li>
-      <li>Módulos de RF: construcción de controles de mando con arduino y emisor de RF, y
-          un receptor de la señal en el robot que se desea actuar.</li>
-  </ul>
-  <!-- Portfolio Modal - Image-->
-  <img class="img-fluid rounded mb-5" src="assets/arduino/insector.jpeg"
-      alt="Juguete reacondicionado" />
-  <!-- Portfolio Modal - Text-->
-  <p class="mb-5">
-      La imagen anterior corresponde a un juguete que lleva por nombre “insector”, el cual
-      fue re acondicionado para poder ser usado desde el celular. Mientras que la imagen
-      que sigue, corresponde a un prototipo creado para una competencia de robot-tracer.
-  </p>
-  <!-- Portfolio Modal - Image-->
-  <img class="img-fluid rounded mb-5" src="assets/arduino/Velocista.jpeg"
-      alt="Velocista" />
-  <!-- Portfolio Modal - Text-->
-
-</div>
 <div class="content">
-  <button mat-button routerLink="/proyecto" style="cursor: pointer">
-    <mat-icon>arrow_back_ios</mat-icon> Volver
-  </button>
+  <h1>Arduino</h1>
+
+  <p>
+    "Mi experiencia en arduino se remonta al año 2013, en donde me inicio en el
+    mundo de la programación al participar de talleres de introducción a la
+    electrónica en el club de robótica de mi universidad (CRU)."
+  </p>
+  <img
+    class="img-fluid"
+    src="assets/arduino/P1000526.JPG"
+    alt="Club de robotica"
+  />
+
+  <!-- Portfolio Modal - Text-->
+  <p>
+    Conforme pasaron los años fui aprendiendo más sobre este amplio mundo de la
+    electrónica, haciendo uso de diferentes elementos como, por ejemplo:
+  </p>
+  <ul>
+    <li>Transistores.</li>
+    <li>Relés.</li>
+    <li>Fotorresistencias.</li>
+    <li>Motores CC.</li>
+    <li>Motores paso a paso.</li>
+    <li>Servomotores.</li>
+    <li>Módulos WI-Fi.</li>
+    <li>Módulos Bluetooth.</li>
+    <li>Sensores ultrasónicos.</li>
+    <li>Sensores PIR.</li>
+    <li>Unidades de medición inercial (IMU).</li>
+    <li>Matriz led.</li>
+    <li>Entre otros.</li>
+  </ul>
+  <p>
+    Dentro de los proyectos en que aplicábamos estos conocimientos adquiridos,
+    se encuentra la reutilización de hardware de juguetes antiguos para poder
+    manejarlos desde diferentes controles a distancia como, por ejemplo:
+  </p>
+  <!-- Image-->
+  <mat-card class="example-card">
+    <mat-tab-group animationDuration="1000ms">
+      <mat-tab label="Bluetooth">
+        <p>
+          Mediante la conexión entre el celular y un módulo Bluetooth que recibe
+          los datos enviados desde el celular.
+        </p>
+
+        <img
+          class="img-fluid"
+          src="assets/arduino/insector.jpeg"
+          alt="Juguete reacondicionado"
+        />
+        <!-- Portfolio Modal - Text-->
+        <p>
+          La imagen anterior corresponde a un juguete que lleva por nombre
+          “insector”, el cual fue re acondicionado para poder ser usado desde el
+          celular.
+        </p>
+      </mat-tab>
+      <mat-tab label="Radio control">
+        <p>
+          Mediante la lectura de los pulsos PWM que recibe el receptor del
+          radiocontrol, y mediante un posterior análisis que se puede traducir
+          al movimiento deseado.
+        </p>
+        <img
+          class="img-fluid"
+          src="assets/arduino/Velocista.jpeg"
+          alt="Velocista"
+        />
+        <p>
+          Mientras que la imagen que sigue, corresponde a un prototipo creado
+          para una competencia de robot-tracer.
+        </p>
+      </mat-tab>
+      <mat-tab label="Control PS2">
+        <p>
+          Mediante la adaptación de los controles de mando inalámbricos de las
+          PlayStation II, los cuales reciben datos que son leídos por el arduino
+          y convertidos en determinadas acciones.
+        </p>
+      </mat-tab>
+      <mat-tab label="Módulos de RF">
+        <p>
+          Construcción de controles de mando con arduino y emisor de RF, y un
+          receptor de la señal en el robot que se desea actuar.
+        </p>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+  <div class="content">
+    <button mat-button routerLink="/proyecto" style="cursor: pointer">
+      <mat-icon>arrow_back_ios</mat-icon> Volver
+    </button>
+  </div>
 </div>

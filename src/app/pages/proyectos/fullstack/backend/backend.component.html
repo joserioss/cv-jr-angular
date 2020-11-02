@@ -1,1 +1,104 @@
-<p>backend works!</p>
+<div class="content">
+  <h1>BACK-END</h1>
+  <p>
+    Mi fuerte en el BACK-END se centra principalmente en el desarrollo de
+    aplicaciones JEE con Spring, para una arquitectura REST, tal como se puede
+    ver en los siguientes proyectos:
+  </p>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div>
+        <a
+          mat-flat-button
+          href="https://github.com/joserioss/clinicapp-backend"
+          target="_blank"
+        >
+          <mat-icon>language</mat-icon>
+        </a>
+      </div>
+      <mat-card-title> CLINIC-APP </mat-card-title>
+      <mat-card-subtitle>
+        https://github.com/joserioss/clinicapp-backend</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      Proyecto en desarrollo que consta de las entidades: paciente, medico,
+      especialidad, diagnóstico, tratamiento y consultas médicas que recopila
+      todas las entidades anteriores, incorporando un CRUD para cada una de
+      estas entidades y el acceso a su información es mediante un servicio REST
+      que se comunica con un Front de Angular.
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div>
+        <a
+          mat-flat-button
+          href="https://github.com/joserioss/proyectoIoT"
+          target="_blank"
+        >
+          <mat-icon>language</mat-icon>
+        </a>
+      </div>
+      <mat-card-title> PROYECTO-IOT </mat-card-title>
+      <mat-card-subtitle>
+        https://github.com/joserioss/proyectoIoT</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-header> </mat-card-header>
+    <mat-card-content>
+      Proyecto del tipo JSP desarrollado para el cierre del bootcamp de Talento
+      Digital, consta de las entidades: usuario, dispositivo y sensor, en donde
+      se puede observar en tiempo real la lectura de sensores que están
+      conectados y registrados en el sistema. Para la recepción de los datos, se
+      hace uso de un servicio REST que recibe la información mediante un método
+      POST, y la almacena en una base de datos para su posterior adquisición.
+      Por otro lado, en este proyecto se implementa Spring Security.
+    </mat-card-content>
+  </mat-card>
+  <mat-divider></mat-divider>
+  <h2>Tecnologías usadas</h2>
+  <p>
+    En el siguiente tab-group indicare un resumen de las tecnologías en las que
+    he trabajado para diferentes back-end:
+  </p>
+  <ul>
+    <li>Java</li>
+    <li>Spring</li>
+    <li>Hibernate</li>
+    <li>JWT</li>
+    <li>Rest</li>
+    <li>MVC</li>
+    <li>JUnit 5</li>
+    <li>JHipster</li>
+  </ul>
+  <!-- Image-->
+  <mat-card class="example-card">
+    <mat-tab-group animationDuration="1000ms">
+      <!-- ***************** JAVA ***************** -->
+      <mat-tab label="JAVA">
+        <p>
+          Con Java aprendí el paradigma orientado a objetos, inicialmente usando
+          Java 8, y luego el desarrollo de aplicaciones web dinámicas con java
+          servlets y JSP. Además de hacer uso de JDBC como interfaz de conexión
+          a las bases de datos mySQL y postgreesql.
+        </p>
+      </mat-tab>
+      <!-- ***************** SPRING ***************** -->
+      <mat-tab label="SPRING">
+        <p>
+          Experiencia en el desarrollo de aplicaciones JEE con Spring Framework,
+          haciendo uso de spring boot, hibernate para la persistencia de datos,
+          modelo-vista-controlador, Spring Security, JWT, servicios REST.
+          Tambien trabaje en pruebas unitarias con JUnit 5, usando Fake y Mock.
+        </p>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+  <div class="content">
+    <button mat-button routerLink="/proyecto" style="cursor: pointer">
+      <mat-icon>arrow_back_ios</mat-icon> Volver
+    </button>
+  </div>
+</div>
