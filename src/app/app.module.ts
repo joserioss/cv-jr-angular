@@ -19,6 +19,7 @@ import { ElectronicaComponent } from './pages/proyectos/electronica/electronica.
 import { FullstackComponent } from './pages/proyectos/fullstack/fullstack.component';
 import { BackendComponent } from './pages/proyectos/fullstack/backend/backend.component';
 import { FrontendComponent } from './pages/proyectos/fullstack/frontend/frontend.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FrontendComponent } from './pages/proyectos/fullstack/frontend/frontend
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
